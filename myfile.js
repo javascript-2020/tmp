@@ -1,14 +1,1 @@
-
-
-
-(async()=>{
-
-     for(var i=0;i<5;i++){
-       console.log(i);
-     }
-
-})();
-
-
-
-
+<div style="background-color: azure; border: 1px solid blue; height: 286px; left: 30px; position: absolute; top: 62px; width: 572px; font-family: arial;" id="github-html-loader-root"><div>github token</div><div style="display: flex; align-items: center; margin-left: 5px;"><img id="token-paste" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAYxJREFUOE/NlLFKw1AUhs9thDSSNhYEC1LIdWj2bl07OPcJxMUXMFsHjUsXrdBdB3HwARxLwIIQXJxcUooHbCOEutRKh9AYucXGtknTGhw8Y3Lud89//stP4I+LRPEopdb3/31EbKxydyhQluVjQoiaTCZTPM9Dv98Hz/M0nufPTdMcRIF9oKIoKcdx3ifNHMeBJEkgiiJYlgWu605zsohoh4F9IJsqs+5pp+UeHNxsgSAIQMiPgOFwCGflHjTbAtw+ia+IuL0UmE1/asbhyxgYVuyyq4c01JuZ3wGjdlS/2/hnQNcDePvg/KEvDQkuDMkejUYF9rHT6TBzfMdmTJnscFry3nUW7p+FqC00EHF30rAUuHNCoVqtQrFYDEANw4BKpQKI6HNWBtZqtQBQVdX4QNM0A0BFUeIDmbT5YquILXmRK7GBsSZcSxBtU5wJAbAH3NjlfD4fGLLVai2WzLpZQMyfIoQclUqlRC6XCwC73S7ouh7+bBbtiFLKkuIx4mUXpqMsMrFXSej5ni+XXuAVg6oGswAAAABJRU5ErkJggg==" style="width: 30px; height: 30px; cursor: pointer;"><div style="margin-left: 5px; margin-right: 5px; margin-top: 5px; height: 30px; flex: 1 1 0%;"><input id="token" style="width: 100%; height: 100%; box-sizing: border-box; font-size: 16px;"></div></div><div>url</div><div style="display: flex; align-items: center; margin-left: 5px;"><img id="url-paste" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAYxJREFUOE/NlLFKw1AUhs9thDSSNhYEC1LIdWj2bl07OPcJxMUXMFsHjUsXrdBdB3HwARxLwIIQXJxcUooHbCOEutRKh9AYucXGtknTGhw8Y3Lud89//stP4I+LRPEopdb3/31EbKxydyhQluVjQoiaTCZTPM9Dv98Hz/M0nufPTdMcRIF9oKIoKcdx3ifNHMeBJEkgiiJYlgWu605zsohoh4F9IJsqs+5pp+UeHNxsgSAIQMiPgOFwCGflHjTbAtw+ia+IuL0UmE1/asbhyxgYVuyyq4c01JuZ3wGjdlS/2/hnQNcDePvg/KEvDQkuDMkejUYF9rHT6TBzfMdmTJnscFry3nUW7p+FqC00EHF30rAUuHNCoVqtQrFYDEANw4BKpQKI6HNWBtZqtQBQVdX4QNM0A0BFUeIDmbT5YquILXmRK7GBsSZcSxBtU5wJAbAH3NjlfD4fGLLVai2WzLpZQMyfIoQclUqlRC6XCwC73S7ouh7+bBbtiFLKkuIx4mUXpqMsMrFXSej5ni+XXuAVg6oGswAAAABJRU5ErkJggg==" style="width: 30px; height: 30px; cursor: pointer;"><div style="margin-left: 5px; margin-right: 5px; margin-top: 5px; height: 30px; flex: 1 1 0%;"><input id="url" style="width: 100%; height: 100%; box-sizing: border-box; font-size: 16px;"></div></div><input style="height: 25px; cursor: pointer; font-size: 16px; box-sizing: border-box; margin-top: 5px; margin-left: 5px;" type="button" value="load html" id="load-html"><input style="height: 25px; cursor: pointer; font-size: 16px; box-sizing: border-box; margin-top: 5px; margin-left: 5px;" type="button" value="load text" id="load-text"></div>
