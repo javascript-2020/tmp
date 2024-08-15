@@ -68,18 +68,3 @@ var url     = 'https://github.com/jbis9051/JamesSOBot/archive/refs/heads/master.
               return promise;
               
         }//exec
-                
-  })//download
-
-
-
-        function extract(fn){
-        
-              var str   = fn.toString();
-              var i1    = str.indexOf('{')+1;
-              var i2    = str.lastIndexOf('}');
-              str       = str.slice(i1,i2);
-              return str;
-              
-        }//extract
-
