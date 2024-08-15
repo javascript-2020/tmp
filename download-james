@@ -1,0 +1,85 @@
+
+
+var url     = 'https://github.com/jbis9051/JamesSOBot/archive/refs/heads/master.zip';
+        
+        async function install(){
+        
+              await exec('npm install');
+              await exec('npm run build');
+              await exec('npm run build');
+              await exec('npm run start:so');
+        
+        }//install
+        
+        
+        (async()=>{
+                                                                                console.clear();
+              var fs      = require('node:fs');
+              var cp      = require('node:child_process');
+                                                                                console.log('\n','downloading',url,'\n');
+              var buf     = await fetch(url).then(res=>res.arrayBuffer());
+              
+              var zip_url = 'https://raw.githubusercontent.com/stuk/jszip/main/dist/jszip.min.js';
+              var JSZip   = (await fetch(zip_url).then(res=>res.text().then(txt=>Promise.resolve(eval(txt))))) && module.exports;
+                                
+              var zip     = new JSZip();
+              zip         = await zip.loadAsync(buf,{createFolders:true});
+              
+              var dir;
+              for(var name in zip.files){
+                                                                                console.log(name);
+                    !dir && (dir=name);
+                    var file    = zip.files[name];
+                    if(file.dir){
+                          if(!fs.existsSync(name)){
+                                fs.mkdirSync(name);
+                          }
+                    }else{
+                          var buf   = await zip.file(name).async('uint8array');
+                          fs.writeFileSync(name,buf);
+                    }
+              } //for
+              
+              console.log('\n',dir);
+              process.chdir(dir);
+              
+                                                                                console.log('\n','install','\n');
+              install();
+              
+        })();
+
+        function exec(cmd) {
+                                                                                console.log('\n',cmd,'\n');
+              var args    = cmd.split(' ');
+              cmd         = args.shift();
+              
+              var resolve,promise=new Promise(res=>resolve=res);
+              var cp      = require('child_process');
+              var child   = cp.spawn(cmd,args);
+              child.stdout.pipe(process.stdout);
+              child.stderr.pipe(process.stderr);
+              child.on('exit',code=>{
+                                                                          
+                    code!=0 && process.exit();
+                    resolve();
+                    
+              });
+              
+              return promise;
+              
+        }//exec
+                
+  })//download
+
+
+
+        function extract(fn){
+        
+              var str   = fn.toString();
+              var i1    = str.indexOf('{')+1;
+              var i2    = str.lastIndexOf('}');
+              str       = str.slice(i1,i2);
+              return str;
+              
+        }//extract
+
