@@ -1,5 +1,16 @@
 
 
+
+/*
+
+i seemed to get this error when i was in the middle of 
+typing out a button element
+
+<button>test</button>
+
+*/
+
+
 mode-html.js:1 Uncaught TypeError: Cannot read properties of undefined (reading 'type')
     at a (mode-html.js:1:20942)
     at t.FoldMode._findEndTagInLine (mode-html.js:1:22528)
